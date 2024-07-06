@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --primary-color: #24053E;
+    --secondary-color: #44FFA1;
+    --primary-font: 'Fraunces', serif;
+    --secondary-font: 'Manrope', sans-serif;
+}
+
+body {
+    color: white;
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 30px 10vw;
+}
+
+.logo-header {
+    width: 85px;
+}
+
+.link-header, .same-button, .introduction .intro-paragraph, .perfil .purple-box p {
+    font-family: var(--secondary-font);
+}
+
+.link-header {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.link-header:hover {
+    color: var(--secondary-color);
+}
+
+.home {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    border-radius: 0 0 100% 100% / 0 0 10% 10%;
+    padding-bottom: 200px;
+}
+
+.home h1 {
+    font-size: clamp(45px, 5vw, 80px);
+    font-weight: 400;
+    max-width: 40vw;
+    min-width: 340px;
+    text-align: center;
+    line-height: 75px;
+    margin-top: 30px;
+}
+
+.home h1 span {
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.same-button {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    border: 1px solid var(--secondary-color);
+    transition: 0.4s;
+}
+
+.same-button:hover, .link-header:hover, .perfil button:hover a {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+}
+
+.home .cell {
+    width: 40vw;
+    min-width: 320px;
+    max-width: 767px;
+    position: absolute;
+    top: 65%; /* Ajuste conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+.home .spring-one {
+    position: absolute;
+    top: 5%; /* Ajuste conforme necessário */
+    right: 85%; /* Centraliza horizontalmente */
+}
+
+.home .spring-two {
+    position: absolute;
+    top: 60%; /* Ajuste conforme necessário */
+    left: 93%; /* Centraliza horizontalmente */
+}
+
+.introduction {
+    margin-top: 15vw;
+    color: var(--primary-color);
+}
+
+.introduction ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding: 100px;
+}
+
+.introduction ul li {
+    max-width: 354px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.introduction .numbers {
+    font-size: 25px;
+    border-radius: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.introduction .subtitles {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.introduction .intro-paragraph {
+    font-size: 17px;
+    font-weight: 400;
+    max-width: 325px;
+}
+
+.perfil {
+    padding: 100px 200px;
+    position: relative;
+    margin-bottom: 600px;
+}
+
+.perfil .founder {
+    max-width: 35vw;
+    min-width: 281px;
+    position: absolute;
+    top: 55%; 
+    left: 5%;
+}
+
+.perfil .purple-box {
+    background-color: var(--primary-color);
+    max-width: 730px;
+    min-width: 343px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    position: absolute;
+    top: 150%; /* Ajuste conforme necessário */
+    left: 57%; /* Ajuste conforme necessário */
+    transform: translateX(-50%);
+}
+
+.perfil .purple-box h2 {
+    font-size: clamp(28px, 3.5vw, 56px);
+    font-weight: 500;
+}
+
+.perfil button {
+    max-width: 190px;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+
+.perfil button a {
+    text-decoration: none;
+}
+
+.spring-three {
+    position: absolute;
+    top: 280%; /* Ajuste conforme necessário */
+    left: 68%; /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* responsive */
+
+@media (max-width: 900px) {
+    .home .spring-one {
+        right: 95%; 
+    }
+
+    .home .spring-two {
+        left: 100%; 
+    }
+
+    .home {
+        padding-bottom: 90px;
+    }
+
+    .home .cell {
+        top: 79%;
+    }
+
+    .spring-three {
+        display: none;
+    }
+
+    .perfil .purple-box {
+        left: 49%;
+    }
+
+    .perfil .founder {
+        max-width: 35vw;
+        min-width: 281px;
+        position: absolute;
+        top: 25%; 
+        left: 13%;
+    }
+}
