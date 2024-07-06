@@ -1,0 +1,36 @@
+/* responsive */
+
+@media (max-width: 900px) {
+    .home .spring-one {
+        right: 95%; 
+    }
+
+    .home .spring-two {
+        left: 100%; 
+    }
+
+    .home {
+        padding-bottom: 90px;
+    }
+
+    .home .cell {
+        top: 79%;
+    }
+
+    .spring-three {
+        display: none;
+    }
+
+    .perfil .purple-box {
+        left: 49%;
+    }
+
+    .perfil .founder {
+        top: 25%; 
+        left: 14%;
+    }
+
+    .perfil button {
+        align-self: center;
+    }
+}

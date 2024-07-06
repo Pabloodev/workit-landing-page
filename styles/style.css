@@ -17,11 +17,11 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--primary-color);
-    padding: 30px 10vw;
+    padding: 40px 10vw;
 }
 
 .logo-header {
-    width: 85px;
+    width: 90px;
 }
 
 .link-header, .same-button, .introduction .intro-paragraph, .perfil .purple-box p {
@@ -33,7 +33,7 @@ header {
     color: white;
     padding: 3px;
     border-bottom: 2px solid var(--secondary-color);
-    font-size: 15px;
+    font-size: 17px;
     transition: 0.4s;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .home h1 {
-    font-size: clamp(45px, 5vw, 80px);
+    font-size: clamp(45px, 7vw, 82px);
     font-weight: 400;
     max-width: 40vw;
     min-width: 340px;
@@ -80,29 +80,28 @@ header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     cursor: pointer;
-    border: 1px solid var(--secondary-color);
 }
 
 .home .cell {
-    width: 40vw;
+    width: 50vw;
     min-width: 320px;
     max-width: 767px;
     position: absolute;
-    top: 65%; /* Ajuste conforme necessário */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .home .spring-one {
     position: absolute;
-    top: 5%; /* Ajuste conforme necessário */
-    right: 85%; /* Centraliza horizontalmente */
+    top: 5%;
+    right: 85%; 
 }
 
 .home .spring-two {
     position: absolute;
-    top: 60%; /* Ajuste conforme necessário */
-    left: 93%; /* Centraliza horizontalmente */
+    top: 60%;
+    left: 93%; 
 }
 
 .introduction {
@@ -160,7 +159,7 @@ header {
     min-width: 281px;
     position: absolute;
     top: 55%; 
-    left: 5%;
+    left: 18%;
 }
 
 .perfil .purple-box {
@@ -172,8 +171,8 @@ header {
     gap: 20px;
     padding: 50px;
     position: absolute;
-    top: 150%; /* Ajuste conforme necessário */
-    left: 57%; /* Ajuste conforme necessário */
+    top: 150%;
+    left: 65%;
     transform: translateX(-50%);
 }
 
@@ -194,8 +193,8 @@ header {
 
 .spring-three {
     position: absolute;
-    top: 280%; /* Ajuste conforme necessário */
-    left: 68%; /* Centraliza horizontalmente */
+    top: 280%;
+    left: 73%; 
     transform: translateX(-50%);
 }
 
@@ -211,40 +210,4 @@ footer .social-media {
     display: flex;
     justify-content: center;
     gap: 30px;
-}
-
-/* responsive */
-
-@media (max-width: 900px) {
-    .home .spring-one {
-        right: 95%; 
-    }
-
-    .home .spring-two {
-        left: 100%; 
-    }
-
-    .home {
-        padding-bottom: 90px;
-    }
-
-    .home .cell {
-        top: 79%;
-    }
-
-    .spring-three {
-        display: none;
-    }
-
-    .perfil .purple-box {
-        left: 49%;
-    }
-
-    .perfil .founder {
-        max-width: 35vw;
-        min-width: 281px;
-        position: absolute;
-        top: 25%; 
-        left: 13%;
-    }
 }
